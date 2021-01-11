@@ -1,0 +1,154 @@
+/* ========================================================================= */
+/*                           U S A    C O L O R S                            */
+/* ========================================================================= */
+.color-usa-red {
+    color: #b22234;
+}
+
+.color-usa-blue {
+    color: #3c3b6e;
+}
+
+.color-usa-white {
+    color: #fff; /* haha this joke */
+}
+
+
+/* ========================================================================= */
+/* */
+/* ========================================================================= */
+footer {
+    font-size: 0.8em;
+}
+
+
+/* ========================================================================= */
+/*                                P O S T S                                  */
+/* ========================================================================= */
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+pre h1 {
+    margin-bottom: -12px;
+    margin-top: 20px;
+}
+
+
+/* ========================================================================= */
+/* */
+/* ========================================================================= */
+.favicon {
+    background-image: url('/media/img/favicon.png');
+    height: 14px;
+    width: 14px;
+    background-size: 14px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+
+/* ========================================================================= */
+/*                            T Y P O G R A P H Y                            */
+/* ========================================================================= */
+.courier {
+    font-family: "Courier New",SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+}
+
+.underline, .u {
+    text-decoration: underline;
+}
+
+
+/* ========================================================================= */
+/*                           E M O J I    S I Z E S                          */
+/* ========================================================================= */
+.emoji-huge {
+    font-size: 120px;
+}
+
+.emoji-huger {
+    font-size: 180px;
+}
+
+.emoji-hugest {
+    font-size: 240px;
+}
+
+.emoji-hugester {
+    font-size: 300px;
+}
+
+
+/* ========================================================================= */
+/*                             J U M B O T R O N                             */
+/* ========================================================================= */
+.jumbotron-slim {
+    margin-top: -32px;
+    padding-right: 20px;
+}
+
+
+/* ========================================================================= */
+/*                         W I D T H    H E L P E R S                        */
+/* ========================================================================= */
+.w-40 { max-width: 40px; }
+.w-138 { max-width: 138px; }
+.w-320 { max-width: 320px; }
+
+
+/* ========================================================================= */
+/*                              B L I N K I N G                              */
+/* ========================================================================= */
+.blinking {
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%   { color: #ddcc80; }
+    49%  { color: #ddcc80; }
+    60%  { color: transparent; }
+    99%  { color: transparent; }
+    100% { color: #ddcc80; }
+}
+
+
+/* ========================================================================= */
+/*                              J O G D I A L                                */
+/* ========================================================================= */
+#jog_dial {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 20px auto;
+  background: url('../img/base_one_bg.png');
+  background-repeat: none;
+}
+
+#jog_dial #jog_dial_knob {
+  background: url('../img/base_one_knob.png');
+}
+
+#jog_dial_meter {
+  width: 200px;
+  height: 10px;
+  margin: 20px auto 30px;
+  background: #999;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#jog_dial_meter div {
+  position: relative;
+  /*width: 65%;*/
+  height: 100%;
+  background: #80e93a;
+}

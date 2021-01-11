@@ -1,0 +1,59 @@
+/* ========================================================================= */
+/*                                 T A G S                                   */
+/* ========================================================================= */
+body {
+    background-color: #fff;;
+    color: #000;
+}
+
+
+/* ========================================================================= */
+/*                              A N C H O R S                                */
+/* ========================================================================= */
+a {
+    color: #3273dc;
+}
+
+a:hover {
+    color: #ff6961;
+}
+
+
+/* ========================================================================= */
+/*                                B L O C K S                                */
+/* ========================================================================= */
+.jumbotron-black {
+    background-color: #252931;
+    color: #ddcc80;
+}
+.jumbotron-black hr { border-color: #ddcc80; }
+.jumbotron-black a { color: #ddcc80; }
+.jumbotron-black a:visited { color: #ff8781; }
+.jumbotron-black a:hover { color: #ff6961; }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-blue {
+    background-color: #3273dc;
+    color: #fff;
+}
+.jumbotron-blue hr { border-color: #fff; }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-red {
+    background-color: #ff6961;
+    color: #fff;
+}
+.jumbotron-red hr { border-color: #fff; }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-white {
+    background-color: #fff;
+}
+.jumbotron-white hr { border-color: #000; }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-yellow {
+    background-color: #faff94; /*#f7ff61;*/
+    color: #000;
+}
+.jumbotron-yellow hr { border-color: #000; }

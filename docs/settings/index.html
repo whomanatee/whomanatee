@@ -17,11 +17,14 @@
     <link rel="apple-touch-icon" href="/media/img/favicon.png">
 
     
-    <title>whomanatee</title>
+    <title> SETTINGS | whomanatee</title>
 </head>
 
     <body>
-        <hr class="jumbotron-blue mt-0 mb-4" style="height: 2px;" />
+        <div id="jumbotron" class="container jumbotron jumbotron-white mt-4 mb-4">
+    <div id="jog_dial"></div>
+    <div id="jog_dial_meter"><div></div></div>
+</div>
 
         <footer class="container mt-n1 text-monospace">
     <div class="d-lg-none text-center h3 jumbotron-black bg-dark py-3 courier">
@@ -551,6 +554,68 @@
 </div>
     </div>
 </footer>
+
+
+    <script src="/media/js/jogDial.min.js"></script>
+<script>
+    (function() {
+        // grab the theme, default to bright
+        var currentTheme = localStorage.getItem("theme") || "bright";
+
+        // DOM objects
+        var themeLink = document.getElementById("theme-link");
+        var meterBar = document.getElementById('jog_dial_meter').children[0];
+        var jumbotron = document.getElementById('jumbotron');
+
+        // settings for JogDial
+        var degreesStartAt = 240;
+        var maxDegrees = 240;
+
+        /**
+         * Checking the current theme to set dial, bg color, and meter size to
+         * match current website theme.
+         */
+        if (currentTheme == "dim") {
+            degreesStartAt = 0;
+            jumbotron.style.backgroundColor = "#000";
+            meterBar.style.width = "0";
+        } else {
+            meterBar.style.width = "100%";
+        }
+
+        /**
+         * JogDial config.
+         */
+        var element = document.getElementById("jog_dial");
+        var dial = JogDial(element, {
+            wheelSize: "200px",
+            knobSize: "70px",
+            minDegree: 0,
+            maxDegree: maxDegrees,
+            degreeStartAt: degreesStartAt})
+        .on("mouseup", function(event){ console.log(event.target.rotation); })
+        .on("mousemove", function(event) {
+            var rotation = event.target.rotation;
+            // currentTheme = localStorage.getItem("theme", "bright");
+            meterBar.style.width = Math.round((rotation / maxDegrees) * 100) + '%';
+            jumbotron.style.backgroundColor = "rgba(0, 0, 0, " + (1 - rotation / maxDegrees) + ")";
+
+            /**
+             * Checking the theme so we don't keep updating the css link when
+             * not necessary, prevents screen flashing.
+             */
+            if (rotation == 0 && currentTheme == "bright") {
+                themeLink.href = "/media/css/dim.css";
+                localStorage.setItem("theme", "dim");
+                currentTheme = "dim";
+            } else if (rotation == maxDegrees && currentTheme == "dim") {
+                themeLink.href = "/media/css/bright.css";
+                localStorage.setItem("theme", "bright");
+                currentTheme = "bright";
+            }
+        });
+    })();
+</script>
 
 
 <script>
