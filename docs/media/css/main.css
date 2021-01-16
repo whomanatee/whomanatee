@@ -98,6 +98,8 @@ pre h1 {
 /*                         W I D T H    H E L P E R S                        */
 /* ========================================================================= */
 .w-40 { max-width: 40px; }
+.w-80 { max-width: 80px; }
+.w-120 { max-width: 120px; }
 .w-138 { max-width: 138px; }
 .w-320 { max-width: 320px; }
 
