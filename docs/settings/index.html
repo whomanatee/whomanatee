@@ -84,6 +84,16 @@
 </div>
 
 
+<hr class="mt-4" />
+<div class="text-left">
+    <!-- <h6 class="font-weight-bold">DEAR HUMANITY,</h6> -->
+    <h6>📣 NOTABLE UPDATES 📣</h6>
+    <small class="d-block mb-3 text-muted">
+        <p></p>
+    </small>
+</div>
+
+
 
 
     </div>
@@ -142,6 +152,16 @@
 </div>
 
 
+<hr class="mt-4" />
+<div class="text-left">
+    <!-- <h6 class="font-weight-bold">DEAR HUMANITY,</h6> -->
+    <h6>📣 NOTABLE UPDATES 📣</h6>
+    <small class="d-block mb-3 text-muted">
+        <p></p>
+    </small>
+</div>
+
+
 
 </div>
         <div class="col-lg-4 ml-lg-4"><h5>human discussion shows</h5>
@@ -170,9 +190,13 @@
                     
                         <li>AGRICULTURE</li>
                     
+                        <li>CONSTITUTION</li>
+                    
                         <li>CARBON</li>
                     
-                        <li>CONSTITUTION</li>
+                        <li>DECEPTION</li>
+                    
+                        <li>DEFENSE</li>
                     
                         <li>DROGAS</li>
                     
@@ -224,15 +248,21 @@
                     
                         <li>PROPERTY</li>
                     
+                        <li>PUNISHMENT</li>
+                    
                         <li>RACE</li>
                     
                         <li>REPRODUCTION</li>
+                    
+                        <li>RESPONSIBILITY</li>
                     
                         <li>RETIREMENT</li>
                     
                         <li>SECURITY</li>
                     
                         <li>TAXXXATION</li>
+                    
+                        <li>TECHNOLOGY</li>
                     
                         <li>TRADE</li>
                     
@@ -289,7 +319,7 @@
                     
                         <li>clean bathroom filthy JANITOR</li>
                     
-                        <li>sexualized suit PRESS</li>
+                        <li>sexual suit PRESS</li>
                     
                         <li>lie to SPY</li>
                     
@@ -390,14 +420,16 @@
 <ul class="list-unstyled text-small">
     <li><a href="/join/">join</a></li>
     <li><a href="/about/">about</a></li>
+    <li><a href="/guests/">guests</a></li>
     <li><a href="/contact/">contact</a></li>
 </ul>
 
 <h5 class="mt-4">txt</h5>
 <ul class="list-unstyled text-small">
-    <li><a href="/readme.txt/">README.txt</a></li>
-    <li><a href="/watchme.txt/">WATCHME.txt</a></li>
-    <li><a href="/hearme.txt/">HEARME.txt</a></li>
+    <li><a href="/readme.txt/">README.txt</a></li>   <!-- dinner invite -->
+    <li><a href="/watchme.txt/">WATCHME.txt</a></li> <!-- presentations, video links -->
+    <li><a href="/bookme.txt/">BOOKME.txt</a></li>   <!-- list of books -->
+    <li><a href="/hearme.txt/">HEARME.txt</a></li>   <!-- songs and hwass -->
 </ul>
 
 <h5 class="mt-4">extra</h5>
@@ -568,15 +600,17 @@
     <script src="/media/js/jogDial.min.js"></script>
 <script>
     (function() {
+        // TODO: use global constants for "dim" and "bright"
+
         // grab the theme, default to bright
         var currentTheme = localStorage.getItem("theme") || "bright";
 
         // DOM objects
-        var themeLink = document.getElementById("theme-link");
         var meterBar = document.getElementById('jog_dial_meter').children[0];
+        var themeLink = document.getElementById("theme-link");
         var jumbotron = document.getElementById('jumbotron');
 
-        // settings for JogDial
+        // default settings for JogDial when theme is "bright"
         var degreesStartAt = 240;
         var maxDegrees = 240;
 
@@ -602,16 +636,14 @@
             minDegree: 0,
             maxDegree: maxDegrees,
             degreeStartAt: degreesStartAt})
-        .on("mouseup", function(event){ console.log(event.target.rotation); })
         .on("mousemove", function(event) {
             var rotation = event.target.rotation;
-            // currentTheme = localStorage.getItem("theme", "bright");
             meterBar.style.width = Math.round((rotation / maxDegrees) * 100) + '%';
             jumbotron.style.backgroundColor = "rgba(0, 0, 0, " + (1 - rotation / maxDegrees) + ")";
 
             /**
              * Checking the theme so we don't keep updating the css link when
-             * not necessary, prevents screen flashing.
+             * not necessary, which will prevent a screen flash in some browsers.
              */
             if (rotation == 0 && currentTheme == "bright") {
                 themeLink.href = "/media/css/dim.css";
