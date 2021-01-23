@@ -116,10 +116,34 @@
         <p class="mt-3">¡Hope to hasta luego soon!</p>
 
         <p class="mt-3">
-            buenas noches,
+            buenas <span id="time-of-day">noches</span>,
             <br/>MOHAMMAD D'BAHAMA
             <br/><small>flounder of whomanatee</small> 🐟
         </p>
+    </small>
+</div>
+
+
+<hr class="mt-4" />
+<div class="text-left">
+    <h6>🌲 LATEST LOGS 🌲</h6>
+    <small class="d-block mb-3 text-muted">
+        
+            no logs
+        
+    </small>
+</div>
+
+
+<hr class="mt-4" />
+<div class="text-left">
+    <h6>📣 ANNOUNCEMENTS 📣</h6>
+    <small class="d-block mb-3 text-muted">
+        
+            
+                > <a href="/worldpieceofpizza/" target="_blank">2021 WORLD PIECE OF PIZZA DAY</a> delayed due to microscopic killer beings. Come <a href="https://github.com/whomanatee/whomanatee.github.io/discussions/5" target="_blank">join the discussion on github</a>. <br/><br/>
+            
+        
     </small>
 </div>
 
@@ -174,10 +198,34 @@
         <p class="mt-3">¡Hope to hasta luego soon!</p>
 
         <p class="mt-3">
-            buenas noches,
+            buenas <span id="time-of-day">noches</span>,
             <br/>MOHAMMAD D'BAHAMA
             <br/><small>flounder of whomanatee</small> 🐟
         </p>
+    </small>
+</div>
+
+
+<hr class="mt-4" />
+<div class="text-left">
+    <h6>🌲 LATEST LOGS 🌲</h6>
+    <small class="d-block mb-3 text-muted">
+        
+            no logs
+        
+    </small>
+</div>
+
+
+<hr class="mt-4" />
+<div class="text-left">
+    <h6>📣 ANNOUNCEMENTS 📣</h6>
+    <small class="d-block mb-3 text-muted">
+        
+            
+                > <a href="/worldpieceofpizza/" target="_blank">2021 WORLD PIECE OF PIZZA DAY</a> delayed due to microscopic killer beings. Come <a href="https://github.com/whomanatee/whomanatee.github.io/discussions/5" target="_blank">join the discussion on github</a>. <br/><br/>
+            
+        
     </small>
 </div>
 
@@ -447,31 +495,31 @@
 <h5 class="mt-4">txt</h5>
 <ul class="list-unstyled text-small">
     <li><a href="/readme.txt/">README.txt</a></li>   <!-- dinner invite -->
-    <li><a href="/watchme.txt/">WATCHME.txt</a></li> <!-- presentations, video links -->
-    <li><a href="/bookme.txt/">BOOKME.txt</a></li>   <!-- list of books -->
-    <li><a href="/hearme.txt/">HEARME.txt</a></li>   <!-- songs and hwass -->
+    <li class="text-muted">WATCHME.txt</li> <!-- presentations, video links -->
+    <li class="text-muted">BOOKME.txt</li>   <!-- list of books -->
+    <li class="text-muted">HEARME.txt</li>   <!-- songs and hwass -->
 </ul>
 
 <h5 class="mt-4">extra</h5>
 <ul class="list-unstyled text-small">
     <li><a href="/settings/">settings</a></li>
-    <li><a href="/understandup/">under<u>standUP</u></a></li>
+    <li class="text-muted">under<u>standUP</u></li>
     <li><a href="/translation/">translation</a></li>
     <li><a href="/learning/">learning</a></li>
     <li><a href="/library/">library</a></li>
     <li><a href="/clubs/">clubs</a></li>
     <li><a href="/logs/">logs</a></li>
-    <li><a href="/log/">log</a></li>
+    <li class="text-muted">log</li>
 </ul>
 
 <h5 class="mt-4">extra<sup>2</sup></h5>
 <ul class="list-unstyled text-small">
-    <li><a href="/news/">news</a></li>
-    <li><a href="/nows/">nows</a></li>
-    <li><a href="/olds/">olds</a></li>
-    <li><a href="/press/">press</a></li>
-    <li><a href="/clown/">clown</a></li>
-    <li><a href="/person/">person</a></li>
+    <li class="text-muted">news</li>
+    <li class="text-muted">nows</li>
+    <li class="text-muted">olds</li>
+    <li class="text-muted">press</li>
+    <li class="text-muted">clown</li>
+    <li class="text-muted">person</li>
 </ul>
 
 <h5 class="mt-4">extra<sup>2<sup>2</sup></sup></h5>
@@ -488,7 +536,7 @@
     <li><a href="/clownparty/">clownparty</a></li>
     <li><a href="/sealedteamsix/">sealedteamsix</a></li>
     <li><a href="/worldpieceofpizza/">worldpieceofpizza</a></li>
-    <li><a href="/robertloblawlawblog/">robertloblawlawblog</a></li>
+    <li class="text-muted">robertloblawlawblog</li>
     <li><a href="/onewordmatters/">onewordmatters</a></li>
     <li><a href="/offourstreets/">offourstreets</a></li>
     <li><a href="/prisonyland/">prisonyland</a></li>
@@ -620,10 +668,12 @@
 <script>
     (function() {
         var currentTheme = localStorage.getItem("theme");
-        var theme = document.getElementById("theme-link");
 
         if (currentTheme == "dim") {
-            theme.href = "/media/css/dim.css";
+            document.getElementById("theme-link").href = "/media/css/dim.css";
+
+            // TODO: not working
+            // document.getElementById("time-of-day").innerText = "yes yes yes";
         }
     })();
 </script>
