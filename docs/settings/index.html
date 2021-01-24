@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="/media/css/main.css">
-    <link rel="stylesheet" href="/media/css/bright.css" id="theme-link">
+    <link rel="stylesheet" href="/media/css/dim.css" id="theme-link">
 
     <!-- from https://stackoverflow.com/a/48646940/420678 -->
     <link rel="shortcut icon" type="image/png" href="/media/img/favicon.png">
@@ -21,7 +21,7 @@
 </head>
 
     <body>
-        <div id="jumbotron" class="container jumbotron jumbotron-white mt-4 mb-4">
+        <div id="jumbotron" class="container jumbotron mt-4 mb-4" style="background-color: #000;">
     <div id="jog_dial"></div>
     <div id="jog_dial_meter"><div></div></div>
 </div>
@@ -630,8 +630,8 @@
     (function() {
         // TODO: use global constants for "dim" and "bright"
 
-        // grab the theme, default to bright
-        var currentTheme = localStorage.getItem("theme") || "bright";
+        // grab the theme, default to dim
+        var currentTheme = localStorage.getItem("theme") || "dim";
 
         // DOM objects
         var meterBar = document.getElementById('jog_dial_meter').children[0];
@@ -639,22 +639,22 @@
         var jumbotron = document.getElementById('jumbotron');
 
         // default settings for JogDial when theme is "bright"
-        var degreesStartAt = 240;
+        var degreesStartAt = 0;
         var maxDegrees = 240;
 
         /**
          * Checking the current theme to set dial, bg color, and meter size to
          * match current website theme.
          */
-        if (currentTheme == "dim") {
-            degreesStartAt = 0;
-            jumbotron.style.backgroundColor = "#000";
-            meterBar.style.width = "0";
+        if (currentTheme == "bright") {
+            degreesStartAt = 240;
+            jumbotron.style.backgroundColor = "#fff";
+            meterBar.style.width = "100%";
 
             // TODO: not working
-            // document.getElementById("time-of-day").innerText = "yes yes yes";
+            // document.getElementById("time-of-day").innerText = "tardes";
         } else {
-            meterBar.style.width = "100%";
+            meterBar.style.width = "0";
         }
 
         /**
@@ -694,11 +694,11 @@
     (function() {
         var currentTheme = localStorage.getItem("theme");
 
-        if (currentTheme == "dim") {
-            document.getElementById("theme-link").href = "/media/css/dim.css";
+        if (currentTheme == "bright") {
+            document.getElementById("theme-link").href = "/media/css/bright.css";
 
             // TODO: not working
-            // document.getElementById("time-of-day").innerText = "yes yes yes";
+            // document.getElementById("time-of-day").innerText = "tardes";
         }
     })();
 </script>

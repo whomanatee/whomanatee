@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="/media/css/main.css">
-    <link rel="stylesheet" href="/media/css/bright.css" id="theme-link">
+    <link rel="stylesheet" href="/media/css/dim.css" id="theme-link">
 
     <!-- from https://stackoverflow.com/a/48646940/420678 -->
     <link rel="shortcut icon" type="image/png" href="/media/img/favicon.png">
@@ -1119,11 +1119,11 @@
     (function() {
         var currentTheme = localStorage.getItem("theme");
 
-        if (currentTheme == "dim") {
-            document.getElementById("theme-link").href = "/media/css/dim.css";
+        if (currentTheme == "bright") {
+            document.getElementById("theme-link").href = "/media/css/bright.css";
 
             // TODO: not working
-            // document.getElementById("time-of-day").innerText = "yes yes yes";
+            // document.getElementById("time-of-day").innerText = "tardes";
         }
     })();
 </script>
