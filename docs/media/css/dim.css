@@ -87,6 +87,9 @@ a:hover {
     filter: brightness(85%);
 }
 
+.card-highlight {
+    background-color: #343a40;
+}
 
 /* ========================================================================= */
 /*                                B L O C K S                                */
