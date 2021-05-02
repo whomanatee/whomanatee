@@ -114,21 +114,6 @@ pre h4 {
 
 
 /* ========================================================================= */
-/*                              B L I N K I N G                              */
-/* ========================================================================= */
-.blinking {
-    animation:blinkingText 1.2s infinite;
-}
-@keyframes blinkingText{
-    0%   { color: #ddcc80; }
-    49%  { color: #ddcc80; }
-    60%  { color: transparent; }
-    99%  { color: transparent; }
-    100% { color: #ddcc80; }
-}
-
-
-/* ========================================================================= */
 /*                              J O G D I A L                                */
 /* ========================================================================= */
 #jog_dial {
@@ -168,9 +153,32 @@ pre h4 {
 /* ========================================================================= */
 /*                                 U T I L S                                 */
 /* ========================================================================= */
+.blinking {
+    animation:blinkingText 2.2s infinite;
+}
+@keyframes blinkingText {
+    0%   { color: #ddcc80; }
+    49%  { color: #ddcc80; }
+    60%  { color: transparent; }
+    99%  { color: transparent; }
+    100% { color: #ddcc80; }
+}
+
 .img-zoom {
+    /* for the zoom icon on images */
     position: absolute;
     top: 8px;
     left: 6px;
     display: inline;
+}
+
+.mirror {
+    /* yoinked from: https://stackoverflow.com/a/11457128/420678 */
+    display: inline-block;
+    font-size: 30px;
+
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
