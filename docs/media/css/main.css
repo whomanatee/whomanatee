@@ -23,9 +23,9 @@ footer {
 
 
 /* ========================================================================= */
-/*                                P O S T S                                  */
+/*                                  P R E                                   */
 /* ========================================================================= */
-pre {
+pre, .pre-wrap {
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -34,14 +34,18 @@ pre {
     font-family: "Courier New",SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
 }
 
-pre h1 {
+pre, .pre-wrap h1 {
     margin-bottom: -12px;
     margin-top: 20px;
 }
 
-pre h4 {
+pre h4, .pre-wrap h4 {
     margin-bottom: -12px;
     margin-top: 0;
+}
+
+.pre-wrap-lg {
+    font-size: 1.3rem;
 }
 
 /* ========================================================================= */
@@ -95,7 +99,7 @@ pre h4 {
 /* ========================================================================= */
 .jumbotron-slim {
     margin-top: -32px;
-    padding-right: 20px;
+    -padding-right: 20px;
 }
 
 
@@ -173,12 +177,39 @@ pre h4 {
 }
 
 .mirror {
-    /* yoinked from: https://stackoverflow.com/a/11457128/420678 */
+    /* from: https://stackoverflow.com/a/11457128/420678 */
     display: inline-block;
-    font-size: 30px;
+    -font-size: 30px;
 
     -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
     -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
     -o-transform: matrix(-1, 0, 0, 1, 0, 0);
     transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.dim-75 { filter: brightness(75%); }
+.dim-80 { filter: brightness(80%); }
+.dim-85 { filter: brightness(85%); }
+
+.pre-wrap {
+    white-space: pre-wrap;
+}
+
+/*===============================================================*/
+/* comfy lists */
+/*===============================================================*/
+.comfy li {
+    padding-top: 1rem;
+}
+
+.comfy li:first-of-type {
+    padding-top: 1rem;
+}
+
+.comfy-comfy li {
+    padding-top: 3rem;
+}
+
+.comfy-comfy li:first-of-type {
+    padding-top: 1rem;
 }

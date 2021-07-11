@@ -43,8 +43,12 @@ body {
     color: #c5c1bc;
 }
 
-pre {
-    color: #c5c1bc;
+pre, .pre-wrap {
+    color: #c9d1d9; /*#c5c1bc;*/
+}
+
+pre hr, .pre-wrap hr {
+    border-color: #c9d1d9;
 }
 
 
@@ -75,18 +79,6 @@ a:hover {
     filter: brightness(80%);
 }
 
-.dim-75 {
-    filter: brightness(75%);
-}
-
-.dim-80 {
-    filter: brightness(80%);
-}
-
-.dim-85 {
-    filter: brightness(85%);
-}
-
 .card-highlight {
     background-color: #343a40;
 }
@@ -94,6 +86,11 @@ a:hover {
 /* ========================================================================= */
 /*                                B L O C K S                                */
 /* ========================================================================= */
+.jumbotron {
+    color: #c9d1d9;
+}
+
+/*---------------------------------------------------------------------------*/
 .jumbotron-black {
     background-color: #252931;
     color: #cec07e; /*#ddcc80;*/
@@ -105,14 +102,17 @@ a:hover {
 
 /*---------------------------------------------------------------------------*/
 .jumbotron-blue {
-    background-color: #1a4b9a;
-    color: #d8d7d4;
+    background-color: #184690; /*#1c44a0; /*#10275c; /*#1a4b9a;*/
+    color: #cac9c5; /*#d8d7d4; */
 }
-.jumbotron-blue hr { border-color: #d8d7d4; }
+.jumbotron-blue hr { border-color: #cac9c5; }
+.jumbotron-blue a { color: #cac9c5; }
+.jumbotron-blue a:visited { color: #a4a29b; /*#ff8781;*/ }
+.jumbotron-blue a:hover { color: #7d7b72; /*#ff6961;*/ }
 
 /*---------------------------------------------------------------------------*/
 .jumbotron-red {
-    background-color: #7a1510; /*#68120e; /*#8f1913;*/
+    background-color: #62110d; /*#7a1510; /*#68120e; /*#8f1913;*/
     color: #c2bfb9; /*#d8d7d4;*/
 }
 .jumbotron-red hr { border-color: #c2bfb9; }
@@ -125,10 +125,18 @@ a:hover {
 
 /*---------------------------------------------------------------------------*/
 .jumbotron-yellow {
-    background-color: #737900; /*#868d00; /*#a3ab00; /*#b6bf00; /*#d3de00; /*#e7f200; /*#f5ff25; /*#f7ff58; /* #b3bc00; /*#d9cb9e /*#f7ff61;*/
+    background-color: #646900; /* #737900; /*#868d00; /*#a3ab00; /*#b6bf00; /*#d3de00; /*#e7f200; /*#f5ff25; /*#f7ff58; /* #b3bc00; /*#d9cb9e /*#f7ff61;*/
     color: #000;
 }
 .jumbotron-yellow hr { border-color: #000; }
 .jumbotron-yellow a { color: #000; }
 .jumbotron-yellow a:visited { color: #000; }
 .jumbotron-yellow a:hover { color: #7a1510; }
+
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-dark-blue {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+.jumbotron-dark-blue hr { border-color: #c9d1d9; }
