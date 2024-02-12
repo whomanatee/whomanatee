@@ -1,0 +1,104 @@
+/* ========================================================================= */
+/*                            B O O T S T R A P                              */
+/* ========================================================================= */
+.bg-dark {
+    background-color: #fff!important;
+}
+
+/* ========================================================================= */
+/*                                 T A G S                                   */
+/* ========================================================================= */
+body {
+    background-color: #fff;;
+    color: #000;
+}
+
+
+/* ========================================================================= */
+/*                              A N C H O R S                                */
+/* ========================================================================= */
+a {
+    color: #3273dc;
+}
+
+a:hover {
+    color: #ff6961;
+}
+
+/* ========================================================================= */
+/*                              C L A S S E S                                */
+/* ========================================================================= */
+.card-highlight {
+    background-color: #e9ecef;
+}
+
+.card-dim-blue {
+    -background-color: #12171f;
+    color: #000;
+}
+
+.card {
+    color: #000;
+}
+
+/* ========================================================================= */
+/*                                B L O C K S                                */
+/* ========================================================================= */
+.jumbotron-black {
+    background-color: #252931;
+    color: #ddcc80;
+}
+.jumbotron-black hr { border-color: #ddcc80; }
+.jumbotron-black a { color: #ddcc80; }
+.jumbotron-black a:visited { color: #ff8781; }
+.jumbotron-black a:hover { color: #ff6961; }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-blue {
+    background-color: #3273dc;
+    color: #fff;
+}
+.jumbotron-blue hr { border-color: #fff; }
+.jumbotron-blue a { color: #fff; }
+.jumbotron-blue a:visited { color: #a4a29b; /*#ff8781;*/ }
+.jumbotron-blue a:hover { color: #7d7b72; /*#ff6961;*/ }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-dim-blue {
+    background-color: #3273dc;
+    color: #fff;
+}
+.jumbotron-dim-blue hr { border-color: #fff; }
+.jumbotron-dim-blue a { color: #fff; }
+.jumbotron-dim-blue a:visited { color: #a4a29b; /*#ff8781;*/ }
+.jumbotron-dim-blue a:hover { color: #7d7b72; /*#ff6961;*/ }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-dark-blue {
+    background-color: #9fafc9; /*#627da6;*/
+    color: #fff;
+}
+.jumbotron-dark-blue hr { border-color: #fff; }
+-.jumbotron-dark-blue a { color: #000; }
+-.jumbotron-dark-blue a:visited { color: #000; }
+-.jumbotron-dark-blue a:hover { color: #000; }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-red {
+    background-color: #ff6961;
+    color: #fff;
+}
+.jumbotron-red hr { border-color: #fff; }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-white {
+    background-color: #fff;
+}
+.jumbotron-white hr { border-color: #000; }
+
+/*---------------------------------------------------------------------------*/
+.jumbotron-yellow {
+    background-color: #faff94; /*#f7ff61;*/
+    color: #000;
+}
+.jumbotron-yellow hr { border-color: #000; }
