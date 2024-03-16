@@ -10,6 +10,12 @@ html {
     line-height: 1.25;
 }
 
+.auto-display-2 {
+    font-size: calc(2.4rem + 2.4vw);
+    line-height: 0.9;
+    word-spacing: -0.25ch;
+}
+
 .auto-display-4 {
     font-size: calc(0.5rem + 2.6vw);
 }
@@ -73,6 +79,9 @@ footer ul {
     border-top: dashed 1px;
 }
 
+ol.slim-indent, ul.slim-indent {
+    padding-left: 24px;
+}
 
 /* ========================================================================= */
 /*                                  P R E                                   */
