@@ -7,7 +7,7 @@ html {
 /* ========================================================================= */
 .auto-display-1 {
     font-size: calc(2.4rem + 3.6vw);
-    line-height: 1.25;
+    line-height: 1.0;
 }
 
 .auto-display-2 {
