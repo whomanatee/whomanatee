@@ -2,103 +2,188 @@
 /*                            B O O T S T R A P                              */
 /* ========================================================================= */
 .bg-dark {
-    background-color: #fff!important;
+    /* Use a very light, clean gray for a softer "dark" element in a bright theme */
+    background-color: #f8f9fa !important;
 }
 
 /* ========================================================================= */
 /*                                 T A G S                                   */
 /* ========================================================================= */
 body {
-    background-color: #fff;;
-    color: #000;
+    /* Pure white for a crisp, clean feel */
+    background-color: #ffffff;
+    /* A dark charcoal, not pure black, for better readability */
+    color: #212529;
 }
-
 
 /* ========================================================================= */
 /*                              A N C H O R S                                */
 /* ========================================================================= */
 a {
-    color: #3273dc;
+    /* A strong, accessible, and professional blue */
+    color: #0056b3;
 }
 
 a:hover {
-    color: #ff6961;
+    /* A vibrant, energetic red for clear hover feedback */
+    color: #E63946;
 }
 
 /* ========================================================================= */
 /*                              C L A S S E S                                */
 /* ========================================================================= */
 .card-highlight {
-    background-color: #e9ecef;
+    /* A soft, subtle gray to distinguish highlighted content */
+    background-color: #eef2f7;
 }
 
 .card-dim-blue {
-    -background-color: #12171f;
-    color: #000;
+    /* This class implies a softer blue, let's use a light, welcoming blue */
+    background-color: #eaf4ff;
+    color: #1d3557;
+    /* Use a deep blue for text for a professional look */
 }
 
 .card {
-    color: #000;
+    /* Ensure default card text is highly readable dark charcoal */
+    color: #212529;
 }
 
 /* ========================================================================= */
 /*                                B L O C K S                                */
 /* ========================================================================= */
+/* Make this a high-contrast dark block, not a muddy black */
 .jumbotron-black {
-    background-color: #252931;
-    color: #ddcc80;
+    background-color: #343a40;
+    color: #f8f9fa;
+    /* Off-white for readability */
 }
-.jumbotron-black hr { border-color: #ddcc80; }
-.jumbotron-black a { color: #ddcc80; }
-.jumbotron-black a:visited { color: #ff8781; }
-.jumbotron-black a:hover { color: #ff6961; }
+
+.jumbotron-black hr {
+    border-color: #6c757d;
+}
+
+.jumbotron-black a {
+    color: #80bfff;
+}
+
+.jumbotron-black a:visited {
+    color: #a8d5ff;
+}
+
+/* Keep visited state distinct but bright */
+.jumbotron-black a:hover {
+    color: #ffffff;
+}
 
 /*---------------------------------------------------------------------------*/
+/* Use a vibrant, primary action blue */
 .jumbotron-blue {
-    background-color: #3273dc;
-    color: #fff;
+    background-color: #007bff;
+    color: #ffffff;
 }
-.jumbotron-blue hr { border-color: #fff; }
-.jumbotron-blue a { color: #fff; }
-.jumbotron-blue a:visited { color: #a4a29b; /*#ff8781;*/ }
-.jumbotron-blue a:hover { color: #7d7b72; /*#ff6961;*/ }
+
+.jumbotron-blue hr {
+    border-color: #ffffff;
+}
+
+.jumbotron-blue a {
+    color: #ffffff;
+}
+
+.jumbotron-blue a:visited {
+    color: #cce5ff;
+}
+
+/* A lighter blue for visited */
+.jumbotron-blue a:hover {
+    color: #e9ecef;
+}
+
+/* A soft gray/white hover */
 
 /*---------------------------------------------------------------------------*/
+/* "Dim Blue" becomes a lighter, more professional sky blue */
 .jumbotron-dim-blue {
-    background-color: #3273dc;
-    color: #fff;
+    background-color: #A8DADC;
+    /* Soft, welcoming teal/blue */
+    color: #1D3557;
+    /* Deep, rich blue text for contrast */
 }
-.jumbotron-dim-blue hr { border-color: #fff; }
-.jumbotron-dim-blue a { color: #fff; }
-.jumbotron-dim-blue a:visited { color: #a4a29b; /*#ff8781;*/ }
-.jumbotron-dim-blue a:hover { color: #7d7b72; /*#ff6961;*/ }
+
+.jumbotron-dim-blue hr {
+    border-color: #1D3557;
+}
+
+.jumbotron-dim-blue a {
+    color: #1D3557;
+}
+
+.jumbotron-dim-blue a:visited {
+    color: #0056b3;
+}
+
+.jumbotron-dim-blue a:hover {
+    color: #E63946;
+}
 
 /*---------------------------------------------------------------------------*/
+/* "Dark Blue" becomes a confident, professional navy */
 .jumbotron-dark-blue {
-    background-color: #9fafc9; /*#627da6;*/
-    color: #fff;
+    background-color: #1D3557;
+    /* Deep navy blue */
+    color: #f1faee;
+    /* A soft, off-white */
 }
-.jumbotron-dark-blue hr { border-color: #fff; }
--.jumbotron-dark-blue a { color: #000; }
--.jumbotron-dark-blue a:visited { color: #000; }
--.jumbotron-dark-blue a:hover { color: #000; }
+
+.jumbotron-dark-blue hr {
+    border-color: #f1faee;
+}
+
+.jumbotron-dark-blue a {
+    color: #a8dadc;
+}
+
+.jumbotron-dark-blue a:visited {
+    color: #80bfff;
+}
+
+.jumbotron-dark-blue a:hover {
+    color: #ffffff;
+}
 
 /*---------------------------------------------------------------------------*/
+/* A more energetic and joyful red */
 .jumbotron-red {
-    background-color: #ff6961;
-    color: #fff;
+    background-color: #E63946;
+    color: #ffffff;
 }
-.jumbotron-red hr { border-color: #fff; }
+
+.jumbotron-red hr {
+    border-color: #ffffff;
+}
 
 /*---------------------------------------------------------------------------*/
+/* Default white jumbotron, ensure high-contrast text */
 .jumbotron-white {
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #212529;
+    /* Explicitly set dark text color */
 }
-.jumbotron-white hr { border-color: #000; }
+
+.jumbotron-white hr {
+    border-color: #ced4da;
+}
 
 /*---------------------------------------------------------------------------*/
+/* A warm, optimistic yellow that doesn't hurt the eyes */
 .jumbotron-yellow {
-    background-color: #faff94; /*#f7ff61;*/
-    color: #000;
+    background-color: #FFC300;
+    /* Rich, golden yellow */
+    color: #343a40;
+    /* Dark charcoal text for readability */
 }
-.jumbotron-yellow hr { border-color: #000; }
+
+.jumbotron-yellow hr {
+    border-color: #343a40;
+}
