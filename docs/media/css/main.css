@@ -401,3 +401,80 @@ a:visited.dim-visited {
     max-width: 800px;
     text-align: center;
 }
+
+
+/* ========================================================================= */
+/*                                   F A Q                                   */
+/* ========================================================================= */
+/* begin faq */
+.faq-list {
+    margin-top: 24px;
+    display: grid;
+    gap: 14px;
+}
+
+.faq-item {
+    border: 1px solid #28323e;
+    border-radius: 16px;
+    -background: linear-gradient(180deg, #111821 0%, #0f141b 100%);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.015) inset;
+    overflow: hidden;
+}
+
+.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 52px 18px 18px;
+    -color: var(--white);
+    font-size: 1.02rem;
+    line-height: 1.5;
+    font-weight: 600;
+    position: relative;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    -color: var(--muted);
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item[open] summary {
+    border-bottom: 1px solid #28323e;
+}
+
+.faq-answer {
+    padding: 16px 18px 18px 18px;
+}
+
+.faq-answer p {
+    margin: 0 0 12px 0;
+    -color: var(--text);
+    font-size: 0.98rem;
+    line-height: 1.74;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+/* end faq */
+
+
+
+
+
+.faq-list details
