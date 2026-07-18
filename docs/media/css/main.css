@@ -24,7 +24,7 @@ body {
 }
 
 .auto-display-4 {
-    font-size: calc(0.5rem + 2.6vw);
+    font-size: calc(2rem + 2.6vw);
 }
 
 .auto-h1 {
@@ -417,6 +417,7 @@ a:visited.dim-visited {
     border: 1px solid #28323e;
     border-radius: 16px;
     -background: linear-gradient(180deg, #111821 0%, #0f141b 100%);
+    background: #212934;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.015) inset;
     overflow: hidden;
 }
